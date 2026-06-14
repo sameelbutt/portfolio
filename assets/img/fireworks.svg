@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <style>
+    .fw-1 { animation: explode 2.5s infinite cubic-bezier(0.25, 1, 0.5, 1); }
+    .fw-2 { animation: explode 3s infinite cubic-bezier(0.25, 1, 0.5, 1) 0.5s; }
+    .fw-3 { animation: explode 2.8s infinite cubic-bezier(0.25, 1, 0.5, 1) 1.2s; }
+    @keyframes explode {
+      0% { transform: scale(0.1); opacity: 1; stroke-width: 3; }
+      50% { opacity: 1; stroke-width: 2; }
+      100% { transform: scale(1.1); opacity: 0; stroke-width: 0.5; }
+    }
+    path { transform-origin: 0 0; }
+  </style>
+  <g transform="translate(60, 110)">
+    <g class="fw-1">
+      <path stroke="#FFCA28" stroke-linecap="round" d="M0 -15 L0 -35 M10 -10 L25 -25 M15 0 L35 0 M10 10 L25 25 M0 15 L0 35 M-10 10 L-25 25 M-15 0 L-35 0 M-10 -10 L-25 -25 M5 -25 L15 -45 M15 -15 L35 -30 M25 -5 L45 -15 M25 5 L45 15 M15 15 L35 30 M5 25 L15 45 M-5 25 L-15 45 M-15 15 L-35 30 M-25 5 L-45 15 M-25 -5 L-45 -15 M-15 -15 L-35 -30 M-5 -25 L-15 -45" />
+    </g>
+  </g>
+  <g transform="translate(150, 60)">
+    <g class="fw-2">
+      <path stroke="#FFCDD2" stroke-linecap="round" d="M0 -20 L0 -50 M14 -14 L35 -35 M20 0 L50 0 M14 14 L35 35 M0 20 L0 50 M-14 14 L-35 35 M-20 0 L-50 0 M-14 -14 L-35 -35 M7 -35 L15 -60 M25 -25 L45 -45 M35 -7 L60 -15 M35 7 L60 15 M25 25 L45 45 M7 35 L15 60 M-7 35 L-15 60 M-25 25 L-45 45 M-35 7 L-60 15 M-35 -7 L-60 -15 M-25 -25 L-45 -45 M-7 -35 L-15 -60" />
+    </g>
+  </g>
+  <g transform="translate(230, 130)">
+    <g class="fw-3">
+      <path stroke="#26C6DA" stroke-linecap="round" d="M0 -15 L0 -40 M10 -10 L28 -28 M15 0 L40 0 M10 10 L28 28 M0 15 L0 40 M-10 10 L-28 28 M-15 0 L-40 0 M-10 -10 L-28 -28 M5 -25 L15 -50 M15 -15 L35 -35 M25 -5 L50 -15 M25 5 L50 15 M15 15 L35 35 M5 25 L15 50 M-5 25 L-15 50 M-15 15 L-35 35 M-25 5 L-50 15 M-25 -5 L-50 -15 M-15 -15 L-35 -35 M-5 -25 L-15 -50" />
+    </g>
+  </g>
+</svg>

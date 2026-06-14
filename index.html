@@ -242,6 +242,21 @@
       box-shadow: 0 8px 25px rgba(198, 255, 61, 0.3);
     }
 
+    @keyframes jump-attention {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-6px); }
+      60% { transform: translateY(-3px); }
+    }
+
+    #navContactBtn {
+      animation: jump-attention 2.5s infinite;
+    }
+
+    #navContactBtn:hover {
+      animation: none;
+      transform: translateY(-2px);
+    }
+
     .btn-outline {
       display: inline-flex;
       align-items: center;
@@ -727,7 +742,7 @@
     /* ======================== PROJECTS ======================== */
     .projects {
       background: var(--white);
-      padding: 80px 0 100px;
+      padding: 0 0 100px;
     }
 
     .projects-grid {
@@ -1819,7 +1834,7 @@
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About me</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Blog</a></li>
+          <li><a href="#accomplishments">Experience</a></li>
         </ul>
         <a href="#" class="btn-primary" id="navContactBtn" onclick="openContactModal(event)">Contact Me</a>
       </nav>
@@ -1836,7 +1851,7 @@
     <a href="#hero" class="mobile-link">Home</a>
     <a href="#about" class="mobile-link">About Me</a>
     <a href="#projects" class="mobile-link">Projects</a>
-    <a href="#contact" class="mobile-link">Blog</a>
+    <a href="#accomplishments" class="mobile-link">Experience</a>
     <a href="#" class="btn-primary" style="margin-top: 12px; color: #0D0D0D !important;" onclick="openContactModal(event)">Contact Me</a>
   </div>
 
@@ -1856,7 +1871,7 @@
             products.
           </p>
           <div class="hero-buttons">
-            <a href="mailto:hello@sameel.com" class="hero-btn-talk">
+            <a href="#contact-page" class="hero-btn-talk">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -2511,22 +2526,8 @@
     </div>
   </section>
 
-  <!-- ======================== CTA / FOOTER ======================== -->
-  <section class="cta-section" id="contact">
-    <div class="container">
-      <h2 class="cta-heading reveal">
-        LET'S WORK<br>
-        T<span class="circle-img"><img src="assets/img/hero-profile-new.jpg" alt="Profile"></span>GETHER
-      </h2>
-      <a href="#" class="cta-button reveal" aria-label="Contact Me" id="ctaContactBtn"
-        onclick="openContactModal(event)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#0D0D0D" stroke-width="2.5" stroke-linecap="round"
-          stroke-linejoin="round">
-          <path d="M7 17L17 7" />
-          <path d="M7 7h10v10" />
-        </svg>
-      </a>
-    </div>
+  <!-- ======================== FOOTER ======================== -->
+  <section class="cta-section" id="contact" style="padding: 0;">
 
     <footer class="footer">
       <div class="container">
@@ -2538,7 +2539,7 @@
           <a href="#hero">Home</a>
           <a href="#about">About me</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Blog</a>
+          <a href="#accomplishments">Experience</a>
         </nav>
       </div>
     </footer>
